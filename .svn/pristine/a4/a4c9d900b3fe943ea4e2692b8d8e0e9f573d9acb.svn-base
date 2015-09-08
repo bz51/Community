@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e"
+    android:id="@+id/topic_titleRelativeLayout">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/userInfo_backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人信息"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />    
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInfo_modifyButton"
+        android:text="修改"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fd5a6e"
+        />   
+</RelativeLayout>
+
+
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topicDetail_titleTextView"
+        android:text="小区"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInfo_communityTextView"
+        android:text="鸿雁名居"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/topicDetail_titleTextView"
+        android:textColor="#999999"
+         />
+    
+</RelativeLayout>
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topicDetail_titleTextView2"
+        android:text="门牌号"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInfo_locTextView"
+        android:text="36栋2单元5层4号"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/topicDetail_titleTextView2"
+        android:textColor="#999999"
+         />
+    
+</RelativeLayout>
+
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topicDetail_titleTextView3"
+        android:text="姓名"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInfo_nameTextView"
+        android:text="XXX"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/topicDetail_titleTextView3"
+        android:textColor="#999999"
+         />
+    
+</RelativeLayout>
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topicDetail_titleTextView4"
+        android:text="电话"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userInfo_phoneTextView"
+        android:text="XXXXXXXXXX"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/topicDetail_titleTextView4"
+        android:textColor="#999999"
+         />
+    
+</RelativeLayout>
+    
+</LinearLayout>
+

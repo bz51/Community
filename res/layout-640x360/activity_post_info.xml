@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+     >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布公告"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_sendButton"
+        android:text="发布"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fd5a6e"
+        />   
+</RelativeLayout>
+
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="当前小区：XXX"
+	    android:id="@+id/postInfo_communityNameTextView"
+	    android:textSize="15dp"
+	    android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+	    />
+
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_buildEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="几栋"
+        android:inputType="number"
+        />
+
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_areaEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="几单元"
+        android:inputType="number"
+        />
+	
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_floorEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="几楼"
+        android:inputType="number"
+        />
+	
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_houseEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="几号"
+        android:inputType="number"
+        />
+	
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postInfo_contentEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="内容"
+        />
+
+	 <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_resultUserTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"   
+        android:text="*门牌号不填视为所有"
+        />
+
+</LinearLayout>

@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#fd5a6e">
+ 	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页"
+        android:id="@+id/mainManager_titleTextView"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+        
+</RelativeLayout>
+
+    <com.community.core.MyGallery
+	android:id="@+id/main_gallery"
+	android:layout_width="fill_parent"
+	android:layout_height="200dp"
+	/>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_gravity="center_horizontal"
+	    >
+	    
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_info"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_postButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="发布公告"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout>
+	    	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_my_topic"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_getInfoButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="小区公告"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout>
+<!-- 	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_my_info"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_searchUserButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="业主信息"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout> -->
+		
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_phone"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_phoneButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="便民电话"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout>
+		
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_manager"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_residentButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="住户入口"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="10dp"
+	    >
+	    
+	    <!-- <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_post"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/main_postButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="发布帖子"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout> -->
+	    
+
+		<!-- 
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_comment"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_authorButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="授权管理"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout>
+		
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="17dp"
+	    	android:layout_weight="1"
+	    	>
+	    	<Button 
+	        	android:layout_width="60dp"
+	        	android:layout_height="60dp"
+	        	android:background="@drawable/main_topic"
+	        	android:layout_gravity="center_horizontal"
+        		android:id="@+id/mainManager_getTopicButton"
+	        	/>
+	    
+	    	<TextView 
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_marginTop="7dp"
+	    	    android:text="小区论坛"
+	        	android:layout_gravity="center_horizontal"
+	    	    />
+		</LinearLayout> -->
+<!--     <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/mainManager_postButton"
+    	android:text="发布公告"
+        />
+
+    <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/mainManager_getInfoButton"
+    	android:text="查看小区公告"
+        />
+
+    <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/mainManager_getTopicButton"
+    	android:text="小区论坛"
+        />
+
+    <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/mainManager_searchUserButton"
+    	android:text="查看业主信息"
+        />
+
+    <Button 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/mainManager_authorButton"
+    	android:text="授权管理"
+        /> -->
+
+</LinearLayout>
+</LinearLayout>

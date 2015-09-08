@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/setUser_backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完善信息"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        
+</RelativeLayout>
+    
+<!--     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="门牌号"
+        android:textSize="20dip" /> -->
+    
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp" >
+   
+	<EditText 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_buildingsEditText"
+	    android:inputType="number"
+	    />     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="栋" />
+   
+	<EditText 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_areaIdEditText"
+	    android:inputType="number"
+	    android:layout_marginLeft="10dp"
+	    />     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单元" />
+   
+	<EditText 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_floorIdEditText"
+	    android:inputType="number"
+	    android:layout_marginLeft="10dp"
+	    />     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="层" />
+    
+	<EditText 
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_houseIdEditText"
+	    android:inputType="number"
+	    android:layout_marginLeft="10dp"
+	    />     
+	    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="号" />
+</LinearLayout>
+
+<!--     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="20dip" /> -->
+    
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_nameEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="姓名"
+	    /> 
+
+<!--     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="电话"
+        android:textSize="20dip"
+         /> -->
+    
+	<EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:id="@+id/setUser_phoneEditText"
+	    android:inputType="phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="电话"
+	    /> 
+	    
+	<CheckBox 
+      	android:layout_width="wrap_content" 
+      	android:layout_height="wrap_content"
+	   	android:id="@+id/setUser_isOwnerCheckBox"
+      	android:checked="false"
+      	android:text="户主"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"     	
+      	/>
+	
+	<Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setUser_submitButton"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fd5a6e"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        />
+	
+</LinearLayout>

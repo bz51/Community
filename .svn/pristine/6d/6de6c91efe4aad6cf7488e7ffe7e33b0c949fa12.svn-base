@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#ffffff"
+     >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e"
+    android:id="@+id/comment_titleRelativeLayout">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/comment_backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />    
+    
+</RelativeLayout>
+    
+    <ListView 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/comment_listview"
+    	android:layout_marginBottom="50dp"
+    	android:layout_below="@id/comment_titleRelativeLayout"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:layout_marginTop="10dp"
+        ></ListView>
+    
+        
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/background"
+    >
+    
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/comment_sendButton1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chat_send_noraml"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+       	/>
+    
+    <EditText 
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+        android:id="@+id/comment_commentEditText"
+        android:layout_toLeftOf="@id/comment_sendButton1"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>    
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">叮咚小区</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_aaa">AAAActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_community">SelectCommunityActivity</string>
+    <string name="title_activity_set_user">SetUserActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_topic">TopicActivity</string>
+    <string name="title_activity_topic_detail">TopicDetailActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_post_topic">PostTopicActivity</string>
+    <string name="title_activity_my_topic">MyTopicActivity</string>
+    <string name="title_activity_my_topic_my_post">MyTopicMyPostActivity</string>
+    <string name="title_activity_my_topic_my_comment">MyTopicMyCommentActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_login_manager">LoginManagerActivity</string>
+    <string name="title_activity_signin_manager">SigninManagerActivity</string>
+    <string name="title_activity_main_manager">MainManagerActivity</string>
+    <string name="title_activity_ma_signin_success">MaSigninSuccessActivity</string>
+    <string name="title_activity_ma_info">MaInfoActivity</string>
+    <string name="title_activity_post_info">PostInfoActivity</string>
+    <string name="title_activity_author">AuthorActivity</string>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <string name="title_activity_post_phone">PostPhoneActivity</string>
+
+</resources>

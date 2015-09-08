@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/signin_backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_loginButton"
+        android:text="登陆"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fd5a6e"
+        />   
+</RelativeLayout>
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_usernameEditText"
+        android:hint="用户名"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_resultUserTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"
+        />
+
+<!--     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/signin_passwordEditText"
+        android:hint="密码"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_resultPassTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"
+        />
+
+<!--     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/signin_repasswordEditText"
+        android:hint="确认密码"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_resultRePassTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"
+        />
+    
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_signinButton"
+        android:text="注册"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    	android:background="#fd5a6e"
+    	android:textColor="#ffffff"
+    	android:textStyle="bold"
+    	android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/signin_managerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"
+        android:text="管理员注册"
+        android:textColor="#d7d7d7" />
+
+</LinearLayout>

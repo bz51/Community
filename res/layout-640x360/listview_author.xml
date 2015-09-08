@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_usernameTextView"
+        android:text="XXXX"
+        android:textSize="20dip"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_timeTextView"
+        android:text="XXXX"
+        android:textSize="20dip"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/author_authorizeButton"
+    	android:text="授权"
+        />
+
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/author_refuseButton"
+    	android:text="拒绝"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_successTextView"
+        android:text="授权成功"
+        android:textSize="20dip"
+        android:visibility="gone"
+        />
+</LinearLayout>
+
+</LinearLayout>

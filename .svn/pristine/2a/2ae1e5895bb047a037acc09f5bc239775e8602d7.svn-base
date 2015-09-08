@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.community.activity.SigninActivity"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fd5a6e">
+ 	
+    <Button 
+        android:layout_width="30dp"
+    	android:layout_height="50dp"
+    	android:id="@+id/signinManager_backButton"
+    	android:background="@drawable/actionbar_back_normal"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理员注册"
+        android:layout_centerInParent="true"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_loginButton"
+        android:text="登陆"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fd5a6e"
+        />   
+</RelativeLayout>
+    
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_usernameEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="用户名"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_resultUserTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"   
+        />
+<!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/signinManager_passwordEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="密码"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_resultPassTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"
+        />
+
+<!--     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码" /> -->
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/signinManager_repasswordEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="确认密码"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_resultRePassTextView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fd5a6e"
+        />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_selectCommunityButton"
+        android:text="选择所在小区"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    	android:background="#fd5a6e"
+    	android:textColor="#ffffff"
+    	android:textStyle="bold"
+    	android:layout_marginTop="30dp"
+        />
+    
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_signinButton"
+        android:text="注册"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    	android:background="#fd5a6e"
+    	android:textColor="#ffffff"
+    	android:textStyle="bold"
+    	android:layout_marginTop="30dp"
+        />
+
+
+<!--     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_loginButton"
+        android:text="已有账号？登陆"
+        />
+  -->   
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinManager_residentButton"
+        android:text="住户注册"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"
+        android:textColor="#d7d7d7"
+        android:textStyle="bold"
+        />
+</LinearLayout>
